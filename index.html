@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <style>
+        :root {
+            --theme-color:#d32957;
+            --theme-color-light:#f9b0c4;
+        }
+        *{
+            font-family: Roboto;
+        }
+        body{
+            height: 100vh;
+            background-color: var(--theme-color);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main{
+            display: grid;
+            grid-template-columns: 3fr auto 5fr;
+            background-color: black;
+            /* margin: 60px 20px; */
+            height: 58vh;
+            width: 120vh;
+            box-shadow: 0px 0px 7px 7px #0808084b;
+        }
+        .left{
+            background: rgb(211,41,96);
+            background: linear-gradient(0deg, rgba(211,41,96,1) 32%, rgba(211,41,70,1) 100%);
+            color: white;
+        }
+        .center{
+            background-color: white;
+            display: flex;
+            align-items: center;
+        }
+        .center button{
+            border: none;
+            padding: 15px 0px;
+            padding-right: 20px;
+            font-size: 30px;
+            font-weight: bold;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            background: rgb(211,41,96);
+            background: linear-gradient(0deg, rgba(211,41,96,1) 32%, rgba(211,41,70,1) 100%);
+            color: white;
+        }
+        .right{
+            background-color: white;
+            
+        }
+        .button-top{
+            display: flex;
+            justify-content: right;
+            align-items: baseline;
+            margin-top: 20px;
+            margin-right: 20px;
+            
+        }
+        .left h1{
+            font-size: 35px;
+        }
+        .left h6{
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .left-signup{
+            height:25vh;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            margin-left: 35px;
+        }
+        .left-website{
+            margin-left: 15px;
+        }
+        .button-top button{
+            /* padding: 8px; */
+            /* font-size: px; */
+            /* font-weight: bold; */
+            border: none;
+            font-size: 12px;
+            
+        }
+        .signup{
+            padding: 8px;
+            background-color: #4545cc;
+            box-shadow:  0px 1px 4px #0000007d;
+            
+            color: white;
+        }
+        .login{
+            color: #4545cc;
+            background-color: white;
+            padding: 8px 13px;
+            box-shadow: 1px 1px 3px #0000007d;
+        }
+        form{
+            margin-top: 20px;
+            margin-left: 60px;
+            margin-right: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 11px;
+        }
+        .label-up{
+            font-size: 15px;
+            color: var(--theme-color);
+        }
+        .input-label{
+            padding: 5px;
+            padding-left: 0;
+            border: none;
+            border-bottom:1px solid var(--theme-color-light);
+            color: var(--theme-color-light);
+        }
+        ::placeholder{
+            color: var(--theme-color-light);
+        }
+        .terms{
+            font-size: 12px;
+            color: var(--theme-color);
+        }
+        .last-button{
+            padding: 10px 20px;
+            /* font-weight: bold; */
+            background-color: var(--theme-color);
+            color: white;
+            border: none;
+            font-size: 12px;
+            box-shadow: 0px 0px 1px 1px #0808084b;
+        }
+        .last-div{
+            margin-top: 20px;
+        }
+    </style>
+
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="left">
+            <div class="left-website">
+                <h6>WEBSITE</h6>
+            </div>
+            <div class="left-signup">
+                <h1><u class="signup-text-underline">Sig</u>n Up</h1>
+            </div>
+            
+        </div>
+        <div class="center">
+            <button>></button>
+        </div>
+        <div class="right">
+            <div class="button-top">
+                <button class="signup">SIGN UP</button>
+                <button class="login">LOGIN</button>
+            </div>
+            
+            <form>
+                <label for="name" class="label-up">FULL NAME</label>
+                <input type="text" placeholder="Enter your full name" class="input-label">
+                <label for="password" class="label-up">PASSWORD</label>
+                <input type="password" placeholder="Enter your password" class="input-label">
+                <label for="email" class="label-up">EMAIL</label>
+                <input type="email" placeholder="Enter your email" class="input-label">
+                <div>
+                    <input type="checkbox" name="terms & condition" id="">
+                    <label for="terms&condition" class="terms">I agree all statement in <u>term of service</u></label><br>
+                </div>
+                <div class="last-div">
+                    <button  class="last-button">SIGN UP</button>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
